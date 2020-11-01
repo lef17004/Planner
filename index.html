@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+ <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+
+
+
+
+    <form id="addEvent">
+      <label for="nameBox">Name:</label><br>
+      <input type="text" id="nameBox" name="nameBox"></input><br>
+      <label for="eventNotes">Notes:</label><br>
+      <input type="text" id="eventNotes" name="eventNotes"></input><br>
+      <label for="date">Date  mm/dd/yyyy</label><br>
+      <input type="date" id="date" name="date"></input><br>
+      <p>Start Time</p>
+      <label for="startTimeHour">Hour</label>
+      <input type="text" id="startTimeHour" name="startTimeHour"></input>
+      <label for="startTimeMin">Minutes</label>
+      <input type="text" id="startTimeMin" name="startTimeMin"></input><br>
+      <p>End Time</p>
+      <label for="endTimeHour">Hour</label>
+      <input type="text" id="endTimeHour" name="endTimeHour"></input>
+      <label for="endTimeMin">Minutes</label>
+      <input type="text" id="endTimeMin" name="endTimeMin"></input><br>
+    </form>
+    <button onclick="save()">Save Event</button>
+
+    <br><br>
+    <label for="date2">Display Events on Selected Date mm/dd/yyyy</label><br>
+    <input type="date" id="date2" name="date2"></input><br>
+    <button onclick="display()">Display</button>
+
+    <div id="eventsDisplay"></div>
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+   
+  </body>
+
+</html>
